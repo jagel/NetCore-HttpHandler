@@ -12,6 +12,8 @@ namespace HttpHandler.Initializers
         {
             Uri = uri;
             Header = ConfigureHeaderParameters(new HeaderParameters());
+
+            BuildEndPoints();
         }
 
         public virtual HeaderParameters ConfigureHeaderParameters(HeaderParameters parameters)
